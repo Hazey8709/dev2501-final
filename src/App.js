@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/headerComp/Header";
+import Nav from "./components/navComp/Nav";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Header logoTitle='Jordan' />
+            <main style={style.mainCont}>
+                <Nav />
+                {/* <MainAd
+              mainAdTitle='Noobie J'
+              aboutPara='
+              Enjoy taking a look at my design. It is a little project for class at Full Sail. This project was created using React some JavaScript, CSS and HTML. Hope you like it, it is a work in progress..
+          '
+          /> */}
+                {/* <Ads /> */}
+            </main>
+            {/* <Comments /> */}
+            {/* <Footer /> */}
+        </>
+    );
 }
 
 export default App;
+
+const style = {
+    mainCont: {},
+};
