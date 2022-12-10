@@ -18,7 +18,7 @@ function App() {
                 />
                 <Ads />
             </main>
-            {/* <Comments /> */}
+
             <Footer />
         </>
     );
