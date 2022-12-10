@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App]
 
 _Remake of another project: 1.3 redesign, dev2501-fortin_1-3._
 
-**_Main Branch:_** _Is a starting point._
+**_Main Branch:_** _Is a starting point._ <br />
 **_Router Branch:_** _Is a branch adding router_
 
 # Notes:
