@@ -4,18 +4,23 @@ import Main from "./components/mainComp/Main";
 import Ads from "./components/adsComp/Ads";
 import Footer from "./components/footerComp/Footer";
 
+import { Route, Routes } from "react-router-dom";
+import DashBoard from "./pages/DashBoard";
+import ChartDash from "./pages/ChartDash";
+
 function App() {
     return (
         <>
             <Header logoTitle='Jordan' />
             <main style={style.mainCont}>
                 <Nav />
-                <Main
-                    mainAdTitle='Noobie J'
-                    aboutPara='
-              Enjoy taking a look at my design. It is a little project for class at Full Sail. This project was created using React some JavaScript, CSS and HTML. Hope you like it, it is a work in progress..
-          '
-                />
+                <section>
+                    <Routes>
+                        <Route path='/main' element={<Main />} />
+                        <Route path='dashBoard' element={<DashBoard />} />
+                        <Route path='chartDash' element={<ChartDash />} />
+                    </Routes>
+                </section>
                 <Ads />
             </main>
 

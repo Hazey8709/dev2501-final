@@ -1,13 +1,22 @@
 import React from "react";
-// import MainAdImage from "./MainAdImage";
+import MainImage from "./MainImage";
 // import MainAvatar from "./MainAvatar";
+import Icons from "./Icons";
 
 const MainAd = (props) => {
     return (
         <div style={style.adsCont}>
-            {/* <MainAvatar /> */}
-            <h3 style={style.mainAdTitle}>{props.mainAdTitle}</h3>
-            <p style={style.aboutPara}>{props.aboutPara}</p>
+            <MainImage />
+            <h3 style={style.mainAdTitle}>Noobie J</h3>
+            <p style={style.aboutPara}>
+                Enjoy taking a look at my design. It is a little project for
+                class at Full Sail. This project was created using React some
+                JavaScript, CSS and HTML. Hope you like it, it is a work in
+                progress..
+            </p>
+            <div>
+                <Icons />
+            </div>
             {/* <MainAdImage /> */}
         </div>
     );
@@ -31,6 +40,4 @@ const style = {
         textAlign: "center",
         padding: "1rem",
     },
-
-    // imageCont: {},
 };

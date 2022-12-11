@@ -1,15 +1,16 @@
 import React from "react";
-import NavBtn from "../buttonsComp/NavBtn";
+import { Link } from "react-router-dom";
+//import NavBtn from "../buttonsComp/NavBtn";
 
 const Nav = () => {
     return (
         <nav style={style.navCont}>
-            <NavBtn
-                btn1Name='Profile'
-                btn2Name='News Feed'
-                btn3Name='Messages'
-                btn4Name='Pictures'
-            />
+            <Link to='/dashBoard'>DashBoard</Link>
+            <Link to='/dashBoard'>News Feed</Link>
+            <Link to='/dashBoard'>Comments</Link>
+            <Link to='/main' style={style.navLink}>
+                Home
+            </Link>
         </nav>
     );
 };
@@ -27,5 +28,9 @@ const style = {
         backgroundColor: "#0005",
         width: "10rem",
         height: "50rem",
+    },
+
+    navLink: {
+        border: "1px solid black",
     },
 };
