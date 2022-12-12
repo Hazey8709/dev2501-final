@@ -3,10 +3,14 @@ import Nav from "./components/navComp/Nav";
 import Main from "./components/mainComp/Main";
 import Ads from "./components/adsComp/Ads";
 import Footer from "./components/footerComp/Footer";
+// import ResetBtn from "./components/buttonsComp/ResetBtn";
+// import SubmitBtn from "./components/buttonsComp/SubmitBtn";
+// import EditBtn from "./components/buttonsComp/EditBtn";
 
 import { Route, Routes } from "react-router-dom";
 import DashBoard from "./pages/DashBoard";
 import ChartDash from "./pages/ChartDash";
+
 
 function App() {
     return (
@@ -23,7 +27,6 @@ function App() {
                 </section>
                 <Ads />
             </main>
-
             <Footer />
         </>
     );
