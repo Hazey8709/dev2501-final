@@ -1,16 +1,13 @@
 import React from "react";
-// import Cform from "./Cform";
-// import CCard from "../CCard";
+import CForm from "./CForm";
+import CCard from "./CCard";
 
 const Comments = (props) => {
     return (
         <section style={style.mainCommentsCont}>
-            {/* <Cform /> */}
+            <CForm />
             <div style={style.comsCont}>
-                {/* <CCard
-                    cCardTitle='Card Title'
-                    cCardDetails='Card details Card details Card details Card details Card details Card details'
-                /> */}
+                <CCard />
             </div>
         </section>
     );

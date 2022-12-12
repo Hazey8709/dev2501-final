@@ -10,7 +10,7 @@ import Footer from "./components/footerComp/Footer";
 import { Route, Routes } from "react-router-dom";
 import DashBoard from "./pages/DashBoard";
 import ChartDash from "./pages/ChartDash";
-
+import Comments from "./components/commentsComp/Comments";
 
 function App() {
     return (
@@ -22,6 +22,7 @@ function App() {
                     <Routes>
                         <Route path='/main' element={<Main />} />
                         <Route path='dashBoard' element={<DashBoard />} />
+                        <Route path='comments' element={<Comments />} />
                         <Route path='chartDash' element={<ChartDash />} />
                     </Routes>
                 </section>

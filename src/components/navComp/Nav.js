@@ -8,10 +8,10 @@ const Nav = () => {
             <Link to='/dashBoard' style={style.navLink}>
                 DashBoard
             </Link>
-            <Link to='/dashBoard' style={style.navLink}>
+            <Link to='/newsFeed' style={style.navLink}>
                 News Feed
             </Link>
-            <Link to='/dashBoard' style={style.navLink}>
+            <Link to='/comments' style={style.navLink}>
                 Comments
             </Link>
             <Link to='/main' style={style.navLink}>
