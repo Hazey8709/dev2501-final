@@ -11,51 +11,50 @@ import {
 
 const data = [
     {
-        name: "Page A",
-        uv: 4000,
-        pv: 2400,
-        amt: 2400,
+        name: "Jan",
+        goal: 65000,
+        expec: 45000,
+        views: 54400,
     },
     {
-        name: "Page B",
-        uv: 3000,
-        pv: 1398,
-        amt: 2210,
+        name: "Feb",
+        goal: 45000,
+        expec: 40000,
+        views: 52210,
     },
     {
-        name: "Page C",
-        uv: 2000,
-        pv: 9800,
-        amt: 2290,
+        name: "March",
+        goal: 35000,
+        expec: 35000,
+        views: 32290,
     },
     {
-        name: "Page D",
-        uv: 2780,
-        pv: 3908,
-        amt: 2000,
+        name: "April",
+        goal: 40000,
+        expec: 40000,
+        views: 42000,
     },
     {
-        name: "Page E",
-        uv: 1890,
-        pv: 4800,
-        amt: 2181,
+        name: "May",
+        goal: 65000,
+        expec: 50000,
+        views: 62181,
     },
     {
-        name: "Page F",
-        uv: 2390,
-        pv: 3800,
-        amt: 2500,
+        name: "Jun",
+        goal: 60000,
+        expec: 50000,
+        views: 62500,
     },
     {
-        name: "Page G",
-        uv: 3490,
-        pv: 4300,
-        amt: 2100,
+        name: "July",
+        goal: 68000,
+        expec: 50000,
+        views: 62100,
     },
 ];
 
-const ChartHorz = ( { chartHorz } ) => {
-    
+const ChartHorz = ({ chartHorz }) => {
     return (
         <article key={chartHorz.id} style={style.cardCont}>
             <h1 style={style.h1}>{chartHorz.chartHeader}</h1>
@@ -70,18 +69,20 @@ const ChartHorz = ( { chartHorz } ) => {
                     bottom: 5,
                 }}
             >
-                <CartesianGrid strokeDasharray='3 3' />
+                <CartesianGrid strokeDasharray='4 4' />
                 <XAxis dataKey='name' />
                 <YAxis />
                 <Tooltip />
-                <Legend />
+                <Legend wrapperStyle={{}} />
+
                 <Line
                     type='monotone'
-                    dataKey='pv'
-                    stroke='#8884d8'
+                    dataKey='expec'
+                    stroke='#35aa28'
                     activeDot={{ r: 8 }}
                 />
-                <Line type='monotone' dataKey='uv' stroke='#82ca9d' />
+                <Line type='monotone' dataKey='goal' stroke='#fa1902' />
+                <Line type='monotone' dataKey='views' stroke='blue' />
             </LineChart>
         </article>
     );
@@ -90,7 +91,11 @@ const ChartHorz = ( { chartHorz } ) => {
 export default ChartHorz;
 
 const style = {
-    cardCont: {},
+    cardCont: {
+        display: "flex",
+        flexDirection: "column",
+        position: "absolute",
+    },
 
     h1: {
         fontWeight: "bold",

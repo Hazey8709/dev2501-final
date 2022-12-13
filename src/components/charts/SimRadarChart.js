@@ -9,40 +9,40 @@ import {
 
 const data = [
     {
-        subject: "Math",
-        A: 120,
-        B: 110,
-        fullMark: 150,
+        subject: "HTML",
+        Skill: 100,
+        DeepSkill: 100,
+        fullMark: 90,
     },
     {
-        subject: "Chinese",
-        A: 98,
-        B: 130,
-        fullMark: 150,
+        subject: "CSS",
+        Skill: 90,
+        DeepSkill: 95,
+        fullMark: 98,
     },
     {
-        subject: "English",
-        A: 86,
-        B: 130,
-        fullMark: 150,
+        subject: "JS",
+        Skill: 85,
+        DeepSkill: 70,
+        fullMark: 85,
     },
     {
-        subject: "Geography",
-        A: 99,
-        B: 100,
-        fullMark: 150,
+        subject: "Axios",
+        Skill: 80,
+        DeepSkill: 70,
+        fullMark: 80,
     },
     {
-        subject: "Physics",
-        A: 85,
-        B: 90,
-        fullMark: 150,
+        subject: "NPM",
+        Skill: 80,
+        DeepSkill: 75,
+        fullMark: 80,
     },
     {
-        subject: "History",
-        A: 65,
-        B: 85,
-        fullMark: 150,
+        subject: "GitHub",
+        Skill: 90,
+        DeepSkill: 75,
+        fullMark: 95,
     },
 ];
 
@@ -57,17 +57,33 @@ const SimRadarChart = ({ simRadarChart }) => {
                 width={500}
                 height={500}
                 data={data}
+                style={style.chart}
             >
                 <PolarGrid />
                 <PolarAngleAxis dataKey='subject' />
                 <PolarRadiusAxis />
                 <Radar
                     name='Mike'
-                    dataKey='A'
-                    stroke='#8884d8'
-                    fill='#8884d8'
-                    fillOpacity={0.6}
+                    dataKey='Skill'
+                    stroke='red'
+                    fill='blue'
+                    fillOpacity={0.3}
                 />
+                <Radar
+                    name='Mike'
+                    dataKey='DeepSkill'
+                    stroke='red'
+                    fill='blue'
+                    fillOpacity={0.3}
+                />
+                <Radar
+                    name='Mike'
+                    dataKey='fullMark'
+                    stroke='red'
+                    fill='blue'
+                    fillOpacity={0.3}
+                />
+                {/* <Line type='monotone' dataKey='A' stroke='blue' /> */}
             </RadarChart>
         </article>
     );
@@ -76,7 +92,21 @@ const SimRadarChart = ({ simRadarChart }) => {
 export default SimRadarChart;
 
 const style = {
-    cardCont: {},
+    cardCont: {
+        display: "flex",
+        flexDirection: "column",
+        border: "1px solid red",
+        width: "20rem",
+        height: "",
+    },
 
-    chartTitle: {},
+    chart: {
+        marginLeft: "0"
+    },
+
+    h1: {
+        // textAlign: "center",
+        textDecoration: "underline",
+        fontWieght: "bold",
+    },
 };

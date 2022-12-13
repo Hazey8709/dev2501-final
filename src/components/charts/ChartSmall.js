@@ -14,46 +14,46 @@ import {
 
 const data = [
     {
-        name: "Page A",
-        uv: 590,
-        pv: 800,
-        amt: 1400,
-        cnt: 490,
+        Name: "Jan",
+        Sales: 1290,
+        Views: 1250,
+        Expec: 1400,
+        Goal: 1200,
     },
     {
-        name: "Page B",
-        uv: 868,
-        pv: 967,
-        amt: 1506,
-        cnt: 590,
+        Name: "Feb",
+        Sales: 868,
+        Views: 967,
+        Expec: 1506,
+        Goal: 990,
     },
     {
-        name: "Page C",
-        uv: 1397,
-        pv: 1098,
-        amt: 989,
-        cnt: 350,
+        Name: "March",
+        Sales: 1097,
+        Views: 1098,
+        Expec: 989,
+        Goal: 950,
     },
     {
-        name: "Page D",
-        uv: 1480,
-        pv: 1200,
-        amt: 1228,
-        cnt: 480,
+        Name: "April",
+        Sales: 1180,
+        Views: 1200,
+        Expec: 1228,
+        Goal: 980,
     },
     {
-        name: "Page E",
-        uv: 1520,
-        pv: 1108,
-        amt: 1100,
-        cnt: 460,
+        Name: "May",
+        Sales: 1020,
+        Views: 1108,
+        Expec: 1100,
+        Goal: 960,
     },
     {
-        name: "Page F",
-        uv: 1400,
-        pv: 680,
-        amt: 1700,
-        cnt: 380,
+        Name: "Jun",
+        Sales: 1400,
+        Views: 1580,
+        Expec: 1700,
+        Goal: 980,
     },
 ];
 
@@ -65,27 +65,27 @@ const ChartSmall = ({ chartSmall }) => {
                 width={500}
                 height={400}
                 data={data}
-                margin={{
-                    top: 20,
-                    right: 20,
-                    bottom: 20,
-                    left: 20,
-                }}
+                // margin={{
+                //     // top: 1,
+                //     right: 20,
+                //     bottom: 20,
+                //     // left: 30,
+                // }}
             >
                 <CartesianGrid stroke='#f5f5f5' />
-                <XAxis dataKey='name' scale='band' />
+                <XAxis dataKey='Name' scale='band' />
                 <YAxis />
                 <Tooltip />
                 <Legend />
                 <Area
                     type='monotone'
-                    dataKey='amt'
-                    fill='#8884d8'
-                    stroke='#8884d8'
+                    dataKey='Expec'
+                    fill='#35aa28'
+                    stroke='darkGreen'
                 />
-                <Bar dataKey='pv' barSize={20} fill='#413ea0' />
-                <Line type='monotone' dataKey='uv' stroke='#ff7300' />
-                <Scatter dataKey='cnt' fill='red' />
+                <Bar dataKey='Views' barSize={20} fill='#413ea0' />
+                <Line type='monotone' dataKey='Sales' stroke='yellow' />
+                <Scatter dataKey='Goal' fill='red' />
             </ComposedChart>
         </article>
     );
@@ -93,4 +93,19 @@ const ChartSmall = ({ chartSmall }) => {
 
 export default ChartSmall;
 
-const style = {};
+const style = {
+    cardCont: {
+        display: "flex",
+        flexDirection: "column",
+        // position: "relative",
+        float: "right",
+        marginLeft: "53rem",
+        marginTop: "1rem",
+    },
+
+    h1: {
+        textAlign: "center",
+        textDecoration: "underline",
+        fontWieght: "bold",
+    },
+};

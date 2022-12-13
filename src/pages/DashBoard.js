@@ -2,23 +2,29 @@ import React, { useState } from "react";
 import ChartHorz from "../components/charts/ChartHorz";
 import ChartSmall from "../components/charts/ChartSmall";
 import SimRadarChart from "../components/charts/SimRadarChart";
+import PChart from "../components/charts/PChart";
 
 function DashBoard() {
     const [chartHorz] = useState([
-        { chartHeader: "Income Overview" },
+        { chartHeader: "Website Monthly View's" },
         // { chartHeader: "Savings Overview" },
     ]);
 
     const [chartSmall] = useState([
-        { chartHeader: "Income" },
+        { chartHeader: "Monthly Visits" },
         // { chartHeader: "Savings" },
         // { chartHeader: "Spending" },
     ]);
 
-    const [SimRadarChart] = useState([
-        { chartHeader: "Radar-Chart" },
+    const [simRadarChart] = useState([
+        { chartTitle: "Skill Chart" },
         // { chartHeader: "Savings" },
         // { chartHeader: "Spending" },
+    ]);
+
+    const [pChart] = useState([
+        { chartHeader: "Percentage Chart" },
+        // { chartHeader: "chart" },
     ]);
 
     return (
@@ -44,6 +50,11 @@ function DashBoard() {
                     />
                 ))}
             </p>
+            <p style={style.pChart}>
+                {pChart.map((pChart, id) => (
+                    <PChart Key={id} id={id} pChart={pChart} />
+                ))}
+            </p>
         </section>
     );
 }
@@ -54,6 +65,7 @@ const style = {
     dashCont: {
         display: "flex",
         flexDirection: "column",
+        position: "relative",
         height: "100%",
         width: "100%",
     },
