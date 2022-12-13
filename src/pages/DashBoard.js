@@ -35,15 +35,15 @@ function DashBoard() {
                     <ChartSmall Key={id} id={id} chartSmall={chartSmall} />
                 ))}
             </p>
-            {/* <p style={style.simRadarChart}>
-                {SimRadarChart.map((simRadarChart, id) => (
+            <p style={style.simRadarChart}>
+                {simRadarChart.map((simRadarChart, id) => (
                     <SimRadarChart
                         Key={id}
                         id={id}
                         simRadarChart={simRadarChart}
                     />
                 ))}
-            </p> */}
+            </p>
         </section>
     );
 }
