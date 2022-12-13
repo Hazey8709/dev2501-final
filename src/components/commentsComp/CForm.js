@@ -1,11 +1,10 @@
 import React from "react";
-// import CAvatar from "./CAvatar";
-// import CAvatarImage from "./logo.png";
+
 
 const CForm = (props) => {
     return (
         <form style={style.formCont}>
-            {/* <CAvatar CAvatarImage={CAvatarImage} /> */}
+
             <input
                 style={style.inputName}
                 type='text'

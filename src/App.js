@@ -10,7 +10,7 @@ import Footer from "./components/footerComp/Footer";
 import { Route, Routes } from "react-router-dom";
 import DashBoard from "./pages/DashBoard";
 import ChartDash from "./pages/ChartDash";
-import Comments from "./components/commentsComp/Comments";
+import Comments from "./pages/Comments";
 
 function App() {
     return (

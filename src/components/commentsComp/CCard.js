@@ -6,7 +6,7 @@ const CCard = (props) => {
     return (
         <section style={style.cardCont}>
             <img src={CAvatar} alt={props.alt} style={style.cCardImage} />
-            <h3 style={style.cCardTitle}>Card 1</h3>
+            <h3 style={style.cCardStatus}>Card 1</h3>
 
             <p style={style.cCardDetails}>
                 Did you see that last post it was awesome. check it out. Did you
@@ -46,7 +46,7 @@ const style = {
         height: "4rem",
     },
 
-    cCardTitle: {
+    cCardStatus: {
         textAlign: "center",
     },
 

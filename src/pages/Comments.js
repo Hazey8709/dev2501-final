@@ -1,6 +1,6 @@
 import React from "react";
-import CForm from "./CForm";
-import CCard from "./CCard";
+import CForm from "../components/commentsComp/CForm";
+import CCard from "../components/commentsComp/CCard";
 
 const Comments = (props) => {
     return (
@@ -8,6 +8,8 @@ const Comments = (props) => {
             <CForm />
             <div style={style.comsCont}>
                 <CCard />
+                {/* <CCard />
+                <CCard /> */}
             </div>
         </section>
     );
@@ -19,12 +21,13 @@ const style = {
     mainCommentsCont: {
         display: "flex",
         flexDirection: "column",
-        border: "1px solid white",
-        borderRadius: "1rem",
+        // position: "relative",
+        // border: "1px solid white",
+        // borderRadius: "1rem",
         backgroundColor: "#0005",
-        marginTop: "2rem",
+        marginTop: ".1rem",
         // height: "30rem",
-        width: "100%",
+        width: "90rem",
     },
 
     comsCont: {

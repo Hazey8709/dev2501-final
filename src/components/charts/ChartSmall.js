@@ -99,8 +99,13 @@ const style = {
         flexDirection: "column",
         // position: "relative",
         float: "right",
-        marginLeft: "53rem",
-        marginTop: "1rem",
+        border: "2px solid grey",
+        borderRadius: ".5rem",
+        backgroundColor: "#d6d6d5",
+        marginLeft: "50rem",
+        marginTop: "3rem",
+        marginRight: "3rem",
+        padding: "1rem",
     },
 
     h1: {

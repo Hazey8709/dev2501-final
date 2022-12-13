@@ -1,31 +1,25 @@
 import React, { useState } from "react";
 import ChartHorz from "../components/charts/ChartHorz";
 import ChartSmall from "../components/charts/ChartSmall";
-import SimRadarChart from "../components/charts/SimRadarChart";
-import PChart from "../components/charts/PChart";
+// import SimRadarChart from "../components/charts/SimRadarChart";
+// import PChart from "../components/charts/PChart";
 
 function DashBoard() {
     const [chartHorz] = useState([
         { chartHeader: "Website Monthly View's" },
-        // { chartHeader: "Savings Overview" },
     ]);
 
     const [chartSmall] = useState([
-        { chartHeader: "Monthly Visits" },
-        // { chartHeader: "Savings" },
-        // { chartHeader: "Spending" },
+        { chartHeader: "Monthly Visits/Sales" },
     ]);
 
-    const [simRadarChart] = useState([
-        { chartTitle: "Skill Chart" },
-        // { chartHeader: "Savings" },
-        // { chartHeader: "Spending" },
-    ]);
+    // const [simRadarChart] = useState([
+    //     { chartTitle: "Skill Chart" },
+    // ]);
 
-    const [pChart] = useState([
-        { chartHeader: "Percentage Chart" },
-        // { chartHeader: "chart" },
-    ]);
+    // const [pChart] = useState([
+    //     { chartHeader: "Percentage Chart" },
+    // ]);
 
     return (
         <section style={style.dashCont}>
@@ -41,7 +35,7 @@ function DashBoard() {
                     <ChartSmall Key={id} id={id} chartSmall={chartSmall} />
                 ))}
             </p>
-            <p style={style.simRadarChart}>
+            {/* <p style={style.simRadarChart}>
                 {simRadarChart.map((simRadarChart, id) => (
                     <SimRadarChart
                         Key={id}
@@ -49,12 +43,12 @@ function DashBoard() {
                         simRadarChart={simRadarChart}
                     />
                 ))}
-            </p>
-            <p style={style.pChart}>
+            </p> */}
+            {/* <p style={style.pChart}>
                 {pChart.map((pChart, id) => (
                     <PChart Key={id} id={id} pChart={pChart} />
                 ))}
-            </p>
+            </p> */}
         </section>
     );
 }
@@ -72,5 +66,6 @@ const style = {
 
     dashTitle: {
         textAlign: "center",
+        fontSize: "32px",
     },
 };

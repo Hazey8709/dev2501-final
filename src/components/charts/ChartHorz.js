@@ -64,16 +64,16 @@ const ChartHorz = ({ chartHorz }) => {
                 data={data}
                 margin={{
                     top: 5,
-                    right: 10,
-                    left: 10,
-                    bottom: 5,
+                    // right: 10,
+                    left: 5,
+                    // bottom: 5,
                 }}
             >
                 <CartesianGrid strokeDasharray='4 4' />
                 <XAxis dataKey='name' />
                 <YAxis />
                 <Tooltip />
-                <Legend wrapperStyle={{}} />
+                <Legend />
 
                 <Line
                     type='monotone'
@@ -95,6 +95,12 @@ const style = {
         display: "flex",
         flexDirection: "column",
         position: "absolute",
+        border: "2px solid grey",
+        borderRadius: ".5rem",
+        backgroundColor: "#d6d6d5",
+        marginTop: "5rem",
+        marginLeft: "3rem",
+        padding: "1rem",
     },
 
     h1: {
