@@ -1,17 +1,17 @@
 import React from "react";
-import { FaEdit } from "react-icons/fa";
+import { FaUserEdit } from "react-icons/fa";
 
-const EditBtn = () => {
+const UserEditBtn = () => {
     return (
         <div style={style.btnCont}>
             <button style={style.editBtn}>
-                <FaEdit />
+                <FaUserEdit />
             </button>
         </div>
     );
 };
 
-export default EditBtn;
+export default UserEditBtn;
 
 const style = {
     btnCont: {

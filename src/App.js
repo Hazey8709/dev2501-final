@@ -21,8 +21,11 @@ function App() {
                 <section>
                     <Routes>
                         <Route path='/main' element={<Main />} />
+                        
                         <Route path='dashBoard' element={<DashBoard />} />
+
                         <Route path='comments' element={<Comments />} />
+
                         <Route path='chartDash' element={<ChartDash />} />
                     </Routes>
                 </section>
