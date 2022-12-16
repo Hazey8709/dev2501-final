@@ -3,11 +3,7 @@ import { FaTrash } from "react-icons/fa";
 
 const DeleteBtn = (props) => {
     return (
-<<<<<<< HEAD
         <button onClick={props.onClick} style={style.delBtn}>
-=======
-        <button style={style.delBtn} onClick={props.onClick}>
->>>>>>> 5e39e5ee708790ea771de02477c5b797f0b5725e
             <FaTrash />
         </button>
     );
