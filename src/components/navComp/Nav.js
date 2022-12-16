@@ -14,7 +14,7 @@ const Nav = () => {
             <Link to='/comments' style={style.navLink}>
                 Comments
             </Link>
-            <Link to='/main' style={style.navLink}>
+            <Link to='/home' style={style.navLink}>
                 Home
             </Link>
         </nav>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CForm from "../components/commentsComp/CForm";
-import CCard from "../components/commentsComp/CCard";
+// import CCard from "../components/commentsComp/CCard";
 import ComList from "../components/commentsComp/ComList";
 
 class Comments extends Component {

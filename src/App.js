@@ -1,6 +1,6 @@
 import Header from "./components/headerComp/Header";
 import Nav from "./components/navComp/Nav";
-import Main from "./components/mainComp/Main";
+// import Main from "./components/mainComp/Main";
 import Ads from "./components/adsComp/Ads";
 import Footer from "./components/footerComp/Footer";
 // import ResetBtn from "./components/buttonsComp/ResetBtn";
@@ -11,6 +11,7 @@ import { Route, Routes } from "react-router-dom";
 import DashBoard from "./pages/DashBoard";
 import ChartDash from "./pages/ChartDash";
 import Comments from "./pages/Comments";
+import Home from "./pages/Home";
 
 function App() {
     return (
@@ -20,8 +21,8 @@ function App() {
                 <Nav />
                 <section>
                     <Routes>
-                        <Route path='/main' element={<Main />} />
-                        
+                        <Route path='/home' element={<Home />} />
+
                         <Route path='dashBoard' element={<DashBoard />} />
 
                         <Route path='comments' element={<Comments />} />
