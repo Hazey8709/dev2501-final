@@ -1,9 +1,9 @@
 import React from "react";
 import { FaTrash } from "react-icons/fa";
 
-const DeleteBtn = () => {
+const DeleteBtn = (props) => {
     return (
-        <button style={style.delBtn}>
+        <button style={style.delBtn} onClick={props.onClick}>
             <FaTrash />
         </button>
     );

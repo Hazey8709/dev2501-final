@@ -32,7 +32,7 @@ class Comments extends Component {
 
     getInput = (e) => {
         this.setState({
-            cName: e.target.value,
+                cName: e.target.value,
             // cStatus: e.target.value,
             // cDescp: e.target.value,
             // cImg: e.target.value,
@@ -56,6 +56,7 @@ class Comments extends Component {
     };
 
     delItem = (key) => {
+        console.log("Button Click")
         const newCList = [...this.state.cList];
         newCList.splice(key, 1);
         this.setState(() => ({
