@@ -33,9 +33,9 @@ class Comments extends Component {
     getInput = (e) => {
         this.setState({
             cName: e.target.value,
-            cStatus: e.target.value,
-            cDescp: e.target.value,
-            cImg: e.target.value,
+            // cStatus: e.target.value,
+            // cDescp: e.target.value,
+            // cImg: e.target.value,
         });
     };
 
@@ -47,15 +47,15 @@ class Comments extends Component {
                 {
                     cName: this.state.cName,
                     cStatus: this.state.cStatus,
-                    cDescp: this.state.cDescp,
-                    cImg: this.state.cImg,
+                    // cDescp: this.state.cDescp,
+                    // cImg: this.state.cImg,
                 },
             ],
         });
         e.target.reset();
     };
 
-    deleteItem = (key) => {
+    delItem = (key) => {
         const newCList = [...this.state.cList];
         newCList.splice(key, 1);
         this.setState(() => ({
@@ -69,7 +69,7 @@ class Comments extends Component {
                 <ComList
                     key={i}
                     val={element}
-                    delItem={() => this.deleteItem(i)}
+                    delItem={() => this.delItem(i)}
                 />
             );
         });
