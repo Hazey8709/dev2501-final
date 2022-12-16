@@ -5,13 +5,9 @@ import ChartSmall from "../components/charts/ChartSmall";
 // import PChart from "../components/charts/PChart";
 
 function DashBoard() {
-    const [chartHorz] = useState([
-        { chartHeader: "Website Monthly View's" },
-    ]);
+    const [chartHorz] = useState([{ chartHeader: "Website Monthly View's" }]);
 
-    const [chartSmall] = useState([
-        { chartHeader: "Monthly Visits/Sales" },
-    ]);
+    const [chartSmall] = useState([{ chartHeader: "Monthly Visits/Sales" }]);
 
     // const [simRadarChart] = useState([
     //     { chartTitle: "Skill Chart" },

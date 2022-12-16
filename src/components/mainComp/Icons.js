@@ -5,10 +5,13 @@ const Icons = (props) => {
     return (
         <section style={style.Cont}>
             <div style={style.iconCont}>
-                <a style={style.settingsLink} href='localhost:3000/main'>
+                <a style={style.settingsLink} href='localhost:3000/home'>
                     <FaCog />
                 </a>
-                <a style={style.editProfileLink} href='localhost:3000/main'>
+                <a
+                    style={style.editProfileLink}
+                    href='localhost:3000/userprofile'
+                >
                     <FaUserEdit />
                 </a>
             </div>

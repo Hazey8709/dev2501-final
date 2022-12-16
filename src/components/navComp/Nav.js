@@ -17,6 +17,10 @@ const Nav = () => {
             <Link to='/home' style={style.navLink}>
                 Home
             </Link>
+
+            <Link to='/userProfile' style={style.navLink}>
+                Profile
+            </Link>
         </nav>
     );
 };
@@ -49,7 +53,7 @@ const style = {
         width: "6rem",
         margin: "0 auto",
         marginBottom: "5rem",
-        marginTop: "5rem",
+        marginTop: "3rem",
         paddingTop: ".5rem",
         paddingBottom: ".5rem",
         cursor: "pointer",
