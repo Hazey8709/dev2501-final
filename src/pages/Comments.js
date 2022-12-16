@@ -20,22 +20,19 @@ class Comments extends Component {
                 cImg: "img",
                 cAlt: "bread is white--alt",
             },
-            {
-                cName: "Name",
-                cStatus: "status",
-                cDescp: "description",
-                cImg: "img",
-                cAlt: "bred is white --alt",
-            },
+            // {
+            //     cName: "Name",
+            //     cStatus: "status",
+            //     cDescp: "description",
+            //     cImg: "img",
+            //     cAlt: "bred is white --alt",
+            // },
         ],
     };
 
     getInput = (e) => {
         this.setState({
-            cName: e.target.value,
-            // cStatus: e.target.value,
-            // cDescp: e.target.value,
-            // cImg: e.target.value,
+            [e.target.value]: e.target.value,
         });
     };
 
@@ -46,7 +43,7 @@ class Comments extends Component {
                 ...this.state.cList,
                 {
                     cName: this.state.cName,
-                    cStatus: this.state.cStatus,
+                    // cStatus: this.state.cStatus,
                     // cDescp: this.state.cDescp,
                     // cImg: this.state.cImg,
                 },
