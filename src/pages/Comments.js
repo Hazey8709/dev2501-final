@@ -14,14 +14,14 @@ class Comments extends Component {
                 cAlt: "bread is white--alt",
             },
             {
-                cName: "bread",
+                cName: "Name",
                 cStatus: "status",
                 cDescp: "description",
                 cImg: "img",
                 cAlt: "bread is white--alt",
             },
             {
-                cName: "bread",
+                cName: "Name",
                 cStatus: "status",
                 cDescp: "description",
                 cImg: "img",
@@ -30,16 +30,55 @@ class Comments extends Component {
         ],
     };
 
+    getInput = (e) => {
+        this.setState({
+            cName: e.target.value,
+            cStatus: e.target.value,
+            cDescp: e.target.value,
+            cImg: e.target.value,
+        });
+    };
+
+    addItem = (e) => {
+        e.preventDefault();
+        this.setState({
+            cList: [
+                ...this.state.cList,
+                {
+                    cName: this.state.cName,
+                    cStatus: this.state.cStatus,
+                    cDescp: this.state.cDescp,
+                    cImg: this.state.cImg,
+                },
+            ],
+        });
+        e.target.reset();
+    };
+
+    deleteItem = (key) => {
+        const newCList = [...this.state.cList];
+        newCList.splice(key, 1);
+        this.setState(() => ({
+            cList: newCList,
+        }));
+    };
+
     render() {
         let commentsList = this.state.cList.map((element, i) => {
-            return <ComList key={i} val={element} />;
+            return (
+                <ComList
+                    key={i}
+                    val={element}
+                    delItem={() => this.deleteItem(i)}
+                />
+            );
         });
 
         return (
             <section style={style.mainCommentsCont}>
-                <CForm />
+                <CForm getInput={this.getInput} addItem={this.addItem} />
                 <div style={style.comsCont}>
-                    <CCard />
+                    {/* <CCard /> */}
                     {commentsList}
                 </div>
             </section>

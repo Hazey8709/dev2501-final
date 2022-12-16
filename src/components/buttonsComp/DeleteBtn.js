@@ -3,24 +3,22 @@ import { FaTrash } from "react-icons/fa";
 
 const DeleteBtn = () => {
     return (
-        <div style={style.btnCont}>
-            <button style={style.delBtn}>
-                <FaTrash />
-            </button>
-        </div>
+        <button style={style.delBtn}>
+            <FaTrash />
+        </button>
     );
 };
 
 export default DeleteBtn;
 
 const style = {
-    btnCont: {
-        display: "flex",
-        flexDirection: "row",
-        border: "1px solid red",
-        width: "2rem",
-        justifyContent: "center",
-    },
+    // btnCont: {
+    //     display: "flex",
+    //     flexDirection: "row",
+    //     border: "1px solid red",
+    //     width: "2rem",
+    //     justifyContent: "center",
+    // },
 
     delBtn: {
         display: "flex",

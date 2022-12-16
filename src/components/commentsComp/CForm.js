@@ -1,34 +1,34 @@
 import React from "react";
-
+import SubmitBtn from "../buttonsComp/SubmitBtn";
 
 const CForm = (props) => {
     return (
-        <form style={style.formCont}>
-
+        <form style={style.formCont} onSubmit={props.addItem}>
             <input
-                style={style.inputName}
-                type='text'
+                name='cName'
+                value={props.cName}
+                onChange={props.getInput}
                 placeholder='Joe Smith:'
+                style={style.inputName}
                 required
             />
             <input
-                type='text'
+                name='cStatus'
+                value={props.cStatus}
+                onChange={props.getInput}
                 placeholder='Status: '
-                required
                 style={style.inputTitle}
+                // required
             />
             <textarea
-                type='text'
+                name='cDetails'
+                value={props.cDetails}
+                onChange={props.getInput}
                 placeholder='Details:'
-                required
+                // required
                 style={style.comment}
             />
-            <button type='submit' style={style.submitBtn}>
-                Submit
-            </button>
-            <button type='reset' style={style.resetBtn}>
-                Reset
-            </button>
+            <SubmitBtn />
         </form>
     );
 };

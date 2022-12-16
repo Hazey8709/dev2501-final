@@ -4,8 +4,8 @@ import { FaCheck } from "react-icons/fa";
 const SubmitBtn = () => {
     return (
         <div style={style.btnCont}>
-            <button style={style.navBtn}>
-                <FaCheck />Enter
+            <button type='submit' value='submit' style={style.navBtn}>
+                <FaCheck />
             </button>
         </div>
     );

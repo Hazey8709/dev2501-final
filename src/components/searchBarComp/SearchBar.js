@@ -5,9 +5,11 @@ const SearchBar = (props) => {
         <div style={style.searchCont}>
             <button style={style.searchBtn}>Submit</button>
             <input
-                style={style.input}
-                type='text'
+
+                name="search"
+                value=""
                 placeholder='Search'
+                style={style.input}
                 required
             ></input>
         </div>

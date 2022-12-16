@@ -4,15 +4,15 @@ import DeleteBtn from "../buttonsComp/DeleteBtn";
 
 const ComList = (props) => {
     return (
-        <article style={style.ComListCont}>
+        <article key={props.id} style={style.ComListCont}>
             <img src={props.val.cImg} style={style.cImg} alt={props.val.cAlt} />
             <h1 style={style.cName}>{props.val.cName}</h1>
             <h3 style={style.cStatus}>{props.val.cStatus}</h3>
 
             <p style={style.cDescp}>{props.val.cDescp}</p>
             <div style={style.btnCont}>
-                <EditBtn />
-                <DeleteBtn />
+                <EditBtn onClick={props.editItem} />
+                <DeleteBtn onClick={props.delItem} />
             </div>
         </article>
     );
