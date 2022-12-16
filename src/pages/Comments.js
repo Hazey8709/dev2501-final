@@ -42,7 +42,7 @@ class Comments extends Component {
             cList: [
                 ...this.state.cList,
                 {
-                    cName: this.state.cName,
+                    [this.state.value]: this.state.value,
                     // cStatus: this.state.cStatus,
                     // cDescp: this.state.cDescp,
                     // cImg: this.state.cImg,
@@ -53,7 +53,7 @@ class Comments extends Component {
     };
 
     delItem = (key) => {
-        console.log("Button Click")
+        console.log("Button Click");
         const newCList = [...this.state.cList];
         newCList.splice(key, 1);
         this.setState(() => ({

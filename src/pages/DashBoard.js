@@ -21,16 +21,16 @@ function DashBoard() {
         <section style={style.dashCont}>
             <h1 style={style.dashTitle}>Dashboard</h1>
 
-            <p style={style.chartHorz}>
+            <div style={style.chartHorz}>
                 {chartHorz.map((chartHorz, id) => (
                     <ChartHorz Key={id} id={id} chartHorz={chartHorz} />
                 ))}
-            </p>
-            <p style={style.chartSmall}>
+            </div>
+            <div style={style.chartSmall}>
                 {chartSmall.map((chartSmall, id) => (
                     <ChartSmall Key={id} id={id} chartSmall={chartSmall} />
                 ))}
-            </p>
+            </div>
             {/* <p style={style.simRadarChart}>
                 {simRadarChart.map((simRadarChart, id) => (
                     <SimRadarChart
