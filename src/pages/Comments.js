@@ -53,6 +53,7 @@ class Comments extends Component {
     };
 
     delItem = (key) => {
+        console.log("Button Click")
         const newCList = [...this.state.cList];
         newCList.splice(key, 1);
         this.setState(() => ({

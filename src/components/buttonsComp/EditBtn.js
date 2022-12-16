@@ -1,9 +1,9 @@
 import React from "react";
 import { FaEdit } from "react-icons/fa";
 
-const EditBtn = () => {
+const EditBtn = (props) => {
     return (
-        <div style={style.btnCont}>
+        <div style={style.btnCont} onClick={props.onClick}>
             <button style={style.editBtn}>
                 <FaEdit />
             </button>
