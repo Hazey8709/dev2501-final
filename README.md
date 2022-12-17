@@ -14,13 +14,13 @@ _Remake of another project: 1.3 redesign, dev2501-fortin_1-3._
 
 # Using:
 
-_React JS_
-_NPM_
-_React Router_
-_React Icons_
-_Recharts_
-_Random User Generator API_
-_VS Code_
+_React JS_ <br />
+_NPM_ <br />
+_React Router_ <br />
+_React Icons_ <br />
+_Recharts_ <br />
+_Random User Generator API_ <br />
+_VS Code_ <br />
 
 # Notes:
 
