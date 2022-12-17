@@ -17,11 +17,11 @@ _2. Router branch is for adding router._ <br />
 
 # Needs:
 
-_1. Add CRUD operations to comments._ <br />
-_2. -DONE-Router will change the center between nav & ads._ <br />
-_3. -DONE- change nav button names to DashBoard, NewsFeed, Messages, Pictures._ <br />
-_4. NewsFeed will be ???._ <br />
-_5. Ad charts from wk 3 to dashboards button._ <br />
+_1. \_Make a newsFeed Page or add some charts made already._ <br />
+_2. \_Fix add comments card (not showing up but card does)._ <br />
+_3. \_Add something to home page to look better._ <br />
+_4. \_check designs and layout ._ <br />
+_5. \_Fix ads components to look better using props._ <br />
 
 # React Notes:
 
