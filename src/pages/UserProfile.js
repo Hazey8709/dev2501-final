@@ -2,44 +2,39 @@ import React, { useState, useEffect } from "react";
 import User from "../components/userComp/User";
 
 function UserProfile() {
-    const [userData] = useState([]);
-    const [isLoaded] = useState([{ isLoaded: true }]);
+    const [userData, setuserData] = useState(null);
 
     useEffect(() => {
-        async function fecthApi() {
+        async function fetchApi() {
             const response = await fetch("https://randomuser.me/api/");
             const data = await response.json();
             const [user] = data.results;
-            console.log(user);
-            // const [user] = data.results.results.map((user) =>
-            //     setuserData({
-            //         firstName: `${user.name.first}`,
-            //         lastName: `${user.name.last}`,
-            //         firstName: `${user.name.first}`,
-            //         username: `${user.name.username}`,
-            //     })
-            // );
             // console.log(user);
+
             setuserData(user);
         }
         fetchApi();
-    });
+    }, []);
 
     return (
         <div style={style.mainCont}>
-            <h1 style={style.userName}>USER Profile</h1>
-            {!isLoaded && userData.length > 0
-                ? userData.map((user) => {
-                      const { firstName, lastName, username } = user;
-                      return (
-                          <User
-                              key={username}
-                              firstName={firstName}
-                              lastName={lastName}
-                          />
-                      );
-                  })
-                : null}
+            <h1 style={style.pageTitle}>Profile</h1>
+            {userData && (
+                <User
+                    avatar={userData.picture.large}
+                    fName={userData.name.first}
+                    lName={userData.name.last}
+                    street={userData.location.street.number}
+                    city={userData.location.city}
+                    state={userData.location.state}
+                    zipcode={userData.location.postcode}
+                    email={userData.email}
+                    phone={userData.phone}
+                    gender={userData.gender}
+                    username={userData.login.username}
+                    pwd={userData.login.password}
+                />
+            )}
         </div>
     );
 }
@@ -48,12 +43,20 @@ export default UserProfile;
 
 const style = {
     mainCont: {
-        border: "1px solid red",
-        width: "85rem",
+        display: "flex",
+        flexDirection: "column",
+        // border: "1px solid red",
+        // margin: "0 auto",
+        width: "90rem",
         height: "50rem",
     },
 
-    userName: {},
+    pageTitle: {
+        textAlign: "center",
+        textDecoration: "underline",
+        fontSize: "3rem",
+        color: "white",
+    },
 };
 
 // class UserProfile extends Component {

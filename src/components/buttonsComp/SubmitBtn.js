@@ -3,29 +3,22 @@ import { FaCheck } from "react-icons/fa";
 
 const SubmitBtn = () => {
     return (
-        <div style={style.btnCont}>
-            <button type='submit' value='submit' style={style.navBtn}>
-                <FaCheck />
-            </button>
-        </div>
+        <button type='submit' value='submit' style={style.navBtn}>
+            <FaCheck />
+        </button>
     );
 };
 
 export default SubmitBtn;
 
 const style = {
-    btnCont: {
-        display: "flex",
-        flexDirection: "row",
-        border: "1px solid red",
-        width: "2rem",
-        justifyContent: "center",
-    },
-
     navBtn: {
-        border: "1px solid darkGreen",
+        border: "1px solid white",
         borderRadius: ".1rem",
         backgroundColor: "#91deb1",
+        margin: "0 auto",
+        marginTop: "2rem",
+        width: "10rem",
         color: "darkGreen",
         padding: ".2rem",
     },

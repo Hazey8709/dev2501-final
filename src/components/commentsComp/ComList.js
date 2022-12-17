@@ -28,34 +28,38 @@ const style = {
         margin: "0 auto",
         // marginTop: ".5rem",
         marginBottom: "2rem",
-        width: "90%",
+        width: "80%",
         height: "20rem",
     },
 
     cImg: {
-        // border: "1px solid yellow",
-        // borderRadius: ".1rem",
-        marginTop: ".5rem",
-        padding: ".5rem",
+        // border: "1px solid white",
+        borderRadius: "1.5rem",
+        margin: ".5rem",
+        padding: "1rem",
         width: "5rem",
         height: "4rem",
     },
 
     cName: {
         textAlign: "center",
+        textDecoration: "underline",
+        fontSize: "22px",
+        color: "white",
     },
 
     cStatus: {
         textAlign: "center",
+        color: "white",
     },
 
     cDescp: {
         textAlign: "center",
+        color: "white",
     },
 
     btnCont: {
         display: "flex",
-        fleDirection: "row",
-        justifyContent: "center",
+        marginTop: "1.5rem",
     },
 };

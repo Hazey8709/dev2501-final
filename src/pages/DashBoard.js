@@ -62,6 +62,8 @@ const style = {
 
     dashTitle: {
         textAlign: "center",
-        fontSize: "32px",
+        fontSize: "3rem",
+        textDecoration: "underline",
+        color: "white",
     },
 };

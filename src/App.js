@@ -18,7 +18,19 @@ function App() {
                 <Nav />
                 <section>
                     <Routes>
-                        <Route path='/home' element={<Home />} />
+                        <Route
+                            path='/home'
+                            element={
+                                <Home
+                                    aboutPara='
+                            Enjoy taking a look at my design. It is a little project for
+                                            class at Full Sail. This project was created using React some
+                                            JavaScript, CSS and HTML. Hope you like it, it is a work in
+                                            progress..'
+                                    homeUserTitle='Noobie J'
+                                />
+                            }
+                        />
 
                         <Route path='dashBoard' element={<DashBoard />} />
 
@@ -46,7 +58,7 @@ const style = {
         flexDirection: "row",
         gridTemplateArea: "",
         marginTop: ".5rem",
-        border: "1px solid yellow",
+        // border: "1px solid yellow",
         width: "100%",
         height: "100%",
     },

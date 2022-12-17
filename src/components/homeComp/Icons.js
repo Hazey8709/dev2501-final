@@ -47,7 +47,7 @@ const style = {
     picCont: {
         display: "flex",
         flexDirection: "row",
-        border: "1px solid red",
+        // border: "1px solid red",
         marginTop: "5rem",
         height: "10rem",
         width: "10rem",

@@ -28,7 +28,9 @@ const CForm = (props) => {
                 // required
                 style={style.comment}
             />
-            <SubmitBtn />
+            <div style={style.subBtn}>
+                <SubmitBtn />
+            </div>
         </form>
     );
 };
@@ -42,7 +44,7 @@ const style = {
         borderRadius: ".4rem",
         backgroundColor: "#0005",
         margin: "0 auto",
-        marginTop: "4.7rem",
+        marginTop: "13rem",
         marginLeft: "4.3rem",
 
         padding: ".5rem",
@@ -71,25 +73,7 @@ const style = {
         height: "11rem",
     },
 
-    submitBtn: {
-        border: ".2rem outset black",
-        borderRadius: ".2rem",
-        marginRight: "1.4rem",
-        marginTop: ".5rem",
-        fontWeight: "bold",
-        width: "7rem",
-        backgroundColor: "#b5f8b1",
-        color: "darkGreen",
-        cursor: "pointer",
-    },
-
-    resetBtn: {
-        border: ".2rem outset black",
-        borderRadius: ".2rem",
-        fontWeight: "bold",
-        width: "7rem",
-        backgroundColor: "#f5b7b1",
-        color: "darkRed",
-        cursor: "pointer",
+    subBtn: {
+        display: "flex",
     },
 };

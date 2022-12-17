@@ -7,13 +7,8 @@ const Home = (props) => {
     return (
         <div style={style.mainCont}>
             <HomeImage />
-            <h3 style={style.mainTitle}>Noobie J</h3>
-            <p style={style.aboutPara}>
-                Enjoy taking a look at my design. It is a little project for
-                class at Full Sail. This project was created using React some
-                JavaScript, CSS and HTML. Hope you like it, it is a work in
-                progress..
-            </p>
+            <h3 style={style.mainTitle}>{props.homeUserTitle}</h3>
+            <p style={style.aboutPara}>{props.aboutPara}</p>
             <div style={style.iconsCont}>
                 <Icons />
             </div>
@@ -25,7 +20,7 @@ export default Home;
 
 const style = {
     mainCont: {
-        // border: "1px solid red",
+        // border: "1px solid blue",
         height: "50rem",
         width: "100%",
         margin: "0 auto",

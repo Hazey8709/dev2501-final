@@ -56,7 +56,7 @@ const data = [
 
 const ChartHorz = ({ chartHorz }) => {
     return (
-        <article key={chartHorz.id} style={style.cardCont}>
+        <article Key={chartHorz.id} style={style.cardCont}>
             <h1 style={style.h1}>{chartHorz.chartHeader}</h1>
             <LineChart
                 width={500}
