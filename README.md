@@ -3,17 +3,30 @@ This project was bootstrapped with [Create React App]
 # Details:
 
 **Author:** _Hazey_ <br />
-**Project:** _React Interface_
+**Project:** _React Interface_ <br />
+**Class:** _Dev2501-0_ <br />
 
 _Remake of another project: 1.3 redesign, dev2501-fortin_1-3._
 
 **Main Branch:** _Is a starting point._ <br />
 **Router Branch:** _Is a branch adding router_ <br />
+**04_API-final Branch:** _Is a branch with userProfile and changes._ <br />
+
+# Using:
+
+_React JS_
+_NPM_
+_React Router_
+_React Icons_
+_Recharts_
+_Random User Generator API_
+_VS Code_
 
 # Notes:
 
 _1. Main is a starting point._ <br />
 _2. Router branch is for adding router._ <br />
+_3. 04_API-final branch is with userProfile, adjustments, layout design._ <br />
 
 # Needs:
 
