@@ -32,7 +32,7 @@ class Comments extends Component {
 
     getInput = (e) => {
         this.setState({
-            [e.target.value]: e.target.value,
+            [e.target.val]: e.target.val,
         });
     };
 
@@ -42,10 +42,10 @@ class Comments extends Component {
             cList: [
                 ...this.state.cList,
                 {
-                    [this.state.value]: this.state.value,
-                    // cStatus: this.state.cStatus,
-                    // cDescp: this.state.cDescp,
-                    // cImg: this.state.cImg,
+                    cName: this.state.cName,
+                    cStatus: this.state.cStatus,
+                    cDescp: this.state.cDescp,
+                    cImg: this.state.cImg,
                 },
             ],
         });
@@ -53,7 +53,7 @@ class Comments extends Component {
     };
 
     delItem = (key) => {
-        console.log("Button Click");
+        console.log("Del-Btn: Button Click");
         const newCList = [...this.state.cList];
         newCList.splice(key, 1);
         this.setState(() => ({

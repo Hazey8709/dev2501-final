@@ -43,6 +43,7 @@ export default App;
 const style = {
     mainCont: {
         display: "flex",
+        flexDirection: "row",
         gridTemplateArea: "",
         marginTop: ".5rem",
         border: "1px solid yellow",
