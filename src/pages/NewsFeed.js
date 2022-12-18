@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SimRadarChart from "../components/charts/SimRadarChart";
-import PChart from "../components/charts/PChart";
+// import PChart from "../components/charts/PChart";
 
 function NewsFeed(props) {
     const [simRadarChart] = useState([{ chartTitle: "Skill Chart" }]);
@@ -9,8 +9,8 @@ function NewsFeed(props) {
 
     return (
         <div style={style.mainCont}>
-            <h1>News Feed</h1>
-            <p style={style.simRadarChart}>
+            <h1 style={style.pageTitle}>News Feed</h1>
+            <div style={style.simRadarChart}>
                 {simRadarChart.map((simRadarChart, id) => (
                     <SimRadarChart
                         Key={id}
@@ -18,12 +18,12 @@ function NewsFeed(props) {
                         simRadarChart={simRadarChart}
                     />
                 ))}
-            </p>
-            <p style={style.pChart}>
+            </div>
+            {/* <div style={style.pChart}>
                 {pChart.map((pChart, id) => (
                     <PChart Key={id} id={id} pChart={pChart} />
                 ))}
-            </p>
+            </div> */}
         </div>
     );
 }
@@ -31,5 +31,23 @@ function NewsFeed(props) {
 export default NewsFeed;
 
 const style = {
-    mainCont: {},
+    mainCont: {
+        // display: "flex",
+        // flexDirection: "row",
+        border: ".1rem solid green",
+        height: "50rem",
+        width: "90rem",
+    },
+
+    pageTitle: {
+        textAlign: "center",
+        textDecoration: "underline",
+        fontSize: "3rem",
+        color: "white",
+    },
+
+    simRadarChart: {
+        // border: ".1rem solid yellow",
+        margin: "5rem",
+    },
 };

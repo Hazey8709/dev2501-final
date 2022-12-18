@@ -49,7 +49,7 @@ const data = [
 const SimRadarChart = ({ simRadarChart }) => {
     return (
         <article key={simRadarChart.id} style={style.cardCont}>
-            <h1 style={style.h1}>{simRadarChart.chartTitle}</h1>
+            <h1 style={style.chartTitle}>{simRadarChart.chartTitle}</h1>
             <RadarChart
                 cx={300}
                 cy={250}
@@ -95,18 +95,19 @@ const style = {
     cardCont: {
         display: "flex",
         flexDirection: "column",
-        border: "1px solid red",
+        margin: "0 auto",
+        // border: "1px solid red",
         width: "20rem",
         height: "",
     },
 
-    chart: {
-        marginLeft: "0"
-    },
+    // chart: {
+    //     marginLeft: "0",
+    // },
 
-    h1: {
-        // textAlign: "center",
+    chartTitle: {
+        textAlign: "center",
         textDecoration: "underline",
-        fontWieght: "bold",
+        fontWeight: "bold",
     },
 };
