@@ -70,6 +70,12 @@ class Comments extends Component {
         // }));
     };
 
+
+    // editItem = ( key ) => {
+    //     const editList =
+
+    // }
+
     render() {
         let commentsList = this.state.cList.map((element, i) => {
             return (
@@ -77,6 +83,7 @@ class Comments extends Component {
                     key={i}
                     val={element}
                     delItem={() => this.delItem(i)}
+                    editItem={() => this.editItem(i)}
                 />
             );
         });

@@ -3,7 +3,7 @@ import { FaEdit } from "react-icons/fa";
 
 const EditBtn = (props) => {
     return (
-        <button style={style.editBtn} onClick={props.onClick}>
+        <button onClick={props.onClick} style={style.editBtn}>
             <FaEdit />
         </button>
     );
@@ -22,4 +22,3 @@ const style = {
         cursor: "pointer",
     },
 };
-
