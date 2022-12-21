@@ -35,7 +35,7 @@ class Comments extends Component {
 
     getInput = (e) => {
         this.setState({
-            [e.target.value]: e.target.value,
+            [e.target.name]: e.target.value,
         });
     };
 
@@ -55,21 +55,28 @@ class Comments extends Component {
         e.target.reset();
     };
 
-    delItem = (key) => {
-        //console.log("Del-Btn: Button Click");
-        const newCList = [...this.state.cList];
-        newCList.splice(key, 1);
-        this.setState(() => ({
-            cList: newCList,
-        }));
+    // delItem = (key) => {
+    //     //console.log("Del-Btn: Button Click");
+    //     const newCList = [...this.state.cList];
+    //     newCList.splice(key, 1);
+    //     this.setState(() => ({
+    //         cList: newCList,
+    //     }));
+    // }
 
-        // const newCList = [...this.state.cList];
-        // newCList.filter((list) => list.key !== key);
-        // this.state(() => ({
-        //     cList: newCList,
-        // }));
-    };
+    //     // const newCList = [...this.state.cList];
+    //     // newCList.filter((list) => list.key !== key);
+    //     // this.state(() => ({
+    //     //     cList: newCList,
+    //     // }));
+    // };
 
+    // Deletes a post using Filter Method
+    delItem = key => {
+        console.log("test")
+        const updatedList = this.state.cList.filter((element, post) => post !== key)
+        this.setState({cList:updatedList})
+    }
 
     // editItem = ( key ) => {
     //     const editList =

@@ -21,8 +21,8 @@ const CForm = (props) => {
                 // required
             />
             <textarea
-                name='cDetails'
-                value={props.cDetails}
+                name='cDescp'
+                value={props.cDescp}
                 onChange={props.getInput}
                 placeholder='Details:'
                 // required

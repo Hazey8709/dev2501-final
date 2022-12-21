@@ -5,7 +5,7 @@ import SimRadarChart from "../components/charts/SimRadarChart";
 function NewsFeed(props) {
     const [simRadarChart] = useState([{ chartTitle: "Skill Chart" }]);
 
-    const [pChart] = useState([{ chartHeader: "Percentage Chart" }]);
+    // const [pChart] = useState([{ chartHeader: "Percentage Chart" }]);
 
     return (
         <div style={style.mainCont}>
