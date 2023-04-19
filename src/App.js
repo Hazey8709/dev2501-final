@@ -38,7 +38,7 @@ function App() {
 
                         <Route path='comments' element={<Comments />} />
 
-                        <Route path='chartDash' element={<ChartDash />} />
+                        {/* <Route path='chartDash' element={<ChartDash />} /> */}
 
                         <Route path='userProfile' element={<UserProfile />} />
                     </Routes>
